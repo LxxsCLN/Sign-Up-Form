@@ -1,15 +1,12 @@
 @font-face {
     font-family: "NorseBold";
     src: url(Norse-Bold.otf);
-    border: 0px;
 }
 
 *,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 
 body{
@@ -115,6 +112,13 @@ hr{
     margin-top: 0;
     box-shadow: 0 20px 20px -20px #333;
     margin: -50px 0 10px;
+    z-index: -1;
+}
+
+label{
+    color: rgba(0, 0, 0, .6);
+    font-size: small;
+    font-weight: bold;
 }
 
 input{
@@ -125,6 +129,13 @@ input{
     border: 1px solid #E5E7EB;
     box-shadow: none;
     min-width: 220px;
+    padding: 2px 5px;
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 2px 2px 2px gray;
+    color: black;
 }
 
 button:hover{
@@ -139,11 +150,7 @@ form{
 
 
 
-label{
-    opacity: .6;
-    font-size: small;
-    font-weight: bold;
-}
+
 
 p{
     font-size: 24px;
