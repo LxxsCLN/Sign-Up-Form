@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "NorseBold";
+    src: url(Norse-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+#left{
+    width: 40vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+#right{
+    width: 60vw;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#righttop{
+    margin-right: 10vw;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2vw;
+}
+
+#rightmid{
+    margin-right: 10vw;
+    height: 28vh;
+    padding-left: 2vw;
+}
+
+#rightbot{
+    padding-left: 2vw;
+    height: 20vh;
+}
+
+img{
+    width: 100%;
+    max-height: 100vh;
+}
+
+#blackbar{
+    position: absolute;
+    top: 25%;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+#pizza{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 370px;
+} 
+
+h2{
+    opacity: .5;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+}
+
+button{
+   background-color: #596D48;
+   min-width: 200px;
+   min-height: 50px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: large;
+}
+
+hr{
+    border: none;
+    height: 20px;
+    height: 50px;
+    margin-top: 0;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px 0 10px;
+}
+
+input{
+    display: block;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 70px);
+}
+
+#pizzatext{
+    color: white;
+    position: relative;
+    left: 400px;
+}

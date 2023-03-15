@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+<div id="left">
+    <img src="leaves.jpg" alt="leaves image">
+    <div id="blackbar"><img src="pizza.png" alt="pizza" id="pizza"><p id="pizzatext">Pizza</p></div></div>
+
+<div id="right">
+    <div id="righttop">
+        <p id="text1">This is not a real online service! You now you need something <br>like this in your life to help you realize your deepest dreams. 
+            <br>Sign up <em>now</em> to get started.
+            <br><br>You <em>know</em> you want to.
+        </p>
+        <h2>Let's do this!</h2>
+    </div>
+    <div id="rightmid">
+        <form id="createaccount" action="https://httpbin.org/post" method="post">
+        <label for="firstname">FIRST NAME<input type="text" id="firstname" name="first-name"></label>
+        <label for="lastname">LAST NAME<input id="lastname" type="text" name="last-name"></label>
+        <label for="email">EMAIL<input id="email" type="email" name="e-mail"></label>
+        <label for="phonenumber">PHONE NUMBER<input type="tel" id="phonenumber" name="phone-number"></label>
+        <label for="password">PASSWORD<input type="password" id="password" name="password"></label>
+        <label for="confirmpassword">CONFIRM PASSWORD<input type="password" id="confirmpassword" name="confirm-password"></label>        
+    </form>
+    </div>
+    <hr>
+    <div id="rightbot">
+        <button form="createaccount" id="createaccount">Create Account</button>
+        <p id="text2">Already have an account? <a href="">Log in</a></p>
+    </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
