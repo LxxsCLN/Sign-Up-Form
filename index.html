@@ -27,12 +27,12 @@
     </div>
     <div id="rightmid"><br><br>
         <form id="createaccount" action="https://httpbin.org/post" method="post">
-        <label for="firstname">FIRST NAME<input type="text" id="firstname" name="first-name"></label>
-        <label for="lastname">LAST NAME<input id="lastname" type="text" name="last-name"></label>
-        <label for="email">EMAIL<input id="email" type="email" name="e-mail"></label>
-        <label for="phonenumber">PHONE NUMBER<input type="tel" id="phonenumber" name="phone-number"></label>
-        <label for="password">PASSWORD<input type="password" id="password" name="password"><p id="errortext">* Passwords do not match</p></label>
-        <label for="confirmpassword">CONFIRM PASSWORD<input type="password" id="confirmpassword" name="confirm-password"></label> 
+        <label for="firstname">FIRST NAME<input type="text" id="firstname" name="first-name" required></label>
+        <label for="lastname">LAST NAME<input id="lastname" type="text" name="last-name" required></label>
+        <label for="email">EMAIL<input id="email" type="email" name="e-mail" required></label>
+        <label for="phonenumber">PHONE NUMBER (optional)<input type="tel" id="phonenumber" name="phone-number"></label>
+        <label for="password">PASSWORD<input type="password" id="password" name="password"><p id="errortext" required>* Passwords do not match</p></label>
+        <label for="confirmpassword">CONFIRM PASSWORD<input type="password" id="confirmpassword" name="confirm-password" required></label> 
     </form>
     
     </div>
