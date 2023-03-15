@@ -13,6 +13,7 @@
 body{
     display: flex;
     flex-direction: row;
+    max-height: 100vh;
 }
 
 #left{
@@ -44,13 +45,13 @@ body{
 
 #rightmid{
     margin-right: 10vw;
-    height: 28vh;
+    height: 25vh;
     padding-left: 2vw;
 }
 
 #rightbot{
     padding-left: 2vw;
-    height: 20vh;
+    height: 25vh;
 }
 
 img{
@@ -62,23 +63,31 @@ img{
     position: absolute;
     top: 25%;
     background-color: rgba(0, 0, 0, .5);
-    height: 100px;
+    height: 200px;
     width: 100%;
     display: flex;
+    justify-content: center;
+    gap: 1vw;
     align-items: center;
-    
-    
 }
 
-#pizza{
-    width: 100px;
-    height: 100px;
-    position: relative;
+#boar{
+    width: 150px;
+    height: 150px;
     left: 370px;
 } 
 
+#boartext{
+    color: white;
+    left: 400px;
+    font-family: "NorseBold";
+    font-size: 120px;
+}
+
 h2{
-    opacity: .5;
+    opacity: .7;
+    margin-bottom: 20px;
+    margin-top: 65px;
 }
 
 a{
@@ -110,6 +119,12 @@ hr{
 
 input{
     display: block;
+    outline: none;
+    border-radius: 4px;
+    height: 25px;
+    border: 1px solid #E5E7EB;
+    box-shadow: none;
+    min-width: 220px;
 }
 
 button:hover{
@@ -122,8 +137,15 @@ form{
     grid-template-rows: repeat(3, 70px);
 }
 
-#pizzatext{
-    color: white;
-    position: relative;
-    left: 400px;
+
+
+label{
+    opacity: .6;
+    font-size: small;
+    font-weight: bold;
+}
+
+p{
+    font-size: 24px;
+    font-weight: bold;
 }
