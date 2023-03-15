@@ -28,28 +28,33 @@ body{
 
 #right{
     width: 60%;
-    margin-top: 15vh;
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #righttop{
     margin-right: 10vw;
-    height: 20vh;
+    min-height: 20vh;
     padding-left: 2vw;
 }
 
 #rightmid{
     margin-right: 10vw;
-    height: 25vh;
+    min-height: 25vh;
     padding-left: 2vw;
 }
 
 #rightbot{
     padding-left: 2vw;
-    height: 40vh;
+    min-height: 25vh;
+}
+
+#rightheader,#rightfooter{
+    height: 15vh;
+    display: flex;
+    flex-shrink: 20;
 }
 
 img{
