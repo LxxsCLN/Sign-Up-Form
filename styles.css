@@ -132,10 +132,9 @@ input{
     padding: 2px 5px;
 }
 
-input:focus{
+input:not(.error):focus{
     border: 1px solid blue;
     box-shadow: 2px 2px 2px gray;
-    color: black;
 }
 
 button:hover{
@@ -149,9 +148,6 @@ form{
 }
 
 
-
-
-
 p{
     font-size: 24px;
     font-weight: bold;
@@ -160,4 +156,25 @@ p{
 #text2{
     font-size: 16px;
     font-weight: bold;
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.error:focus{
+    border: 1px solid red;
+    box-shadow: 2px 2px 2px gray;
+}
+
+#errortext{
+    color: red;
+    font-size: 8px;
+    position: absolute;
+    margin-top: 4px;
+    visibility: hidden;
+}
+
+#password{
+    position: relative;
 }
